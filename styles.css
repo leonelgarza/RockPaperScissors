@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto Flex', sans-serif;}
+h1, h2 {
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+.instructions-card {
+    display: flex;
+    justify-content: center;
+}
+.instructions-card img{
+    width: 200px;
+}
+.game-subpart{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+}
+.instructions {
+    width: 500px;
+    padding-right: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 350px;
+    justify-content: space-between;
+}
+.game h1{
+    font-size: large;
+}
+.gamebutton{
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+}
+.match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgMatch{
+    width: 50px;
+    margin: 15px;
+}
+.game p,
+.game h1,
+.game div {
+    margin-top: 15px;
+}
