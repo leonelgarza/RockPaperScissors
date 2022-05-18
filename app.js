@@ -8,7 +8,7 @@ const resultDisplay = document.createElement('h1')
 
 const gameGrid = document.querySelector('#game')
 
-const choices = ['rock', 'papper', 'scissors']
+const choices = ['rock', 'paper', 'scissors']
 
 vs.src = 'Street_Fighter_VS_logo.png'
 vs.classList.add('imgMatch')
@@ -41,18 +41,18 @@ gameGrid.append(match, userChoiceDisplay, computerChoiceDisplay, resultDisplay)
 const getResult = (userChoice, randomChoice) => {
     switch(userChoice + randomChoice){
         case 'rockscissors':
-        case 'papperrock':
-        case 'scissorspapper':
+        case 'paperrock':
+        case 'scissorspaper':
             resultDisplay.innerHTML = 'YOU WIN!'
             break
         case 'scissorsrock':
-        case 'rockpapper':
-        case 'papperscissors':
+        case 'rockpaper':
+        case 'paperscissors':
             resultDisplay.innerHTML = 'YOU LOSE!'
             break
         case 'scissorsscissors':
         case 'rockrock':
-        case 'papperpapper':
+        case 'paperpaper':
             resultDisplay.innerHTML = 'ITS A DRAW!'
             break
     } 
